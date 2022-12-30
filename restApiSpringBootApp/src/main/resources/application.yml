@@ -9,3 +9,15 @@ spring:
   messages:
     basename: i18n/exception
     encoding: UTF-8
+
+social:
+  kakao:
+    client-id: # REST_API_KEY 정보를 입력하세요!
+    redirect: /oauth/kakao/redirect
+    url:
+      login: https://kauth.kakao.com/oauth/authorize
+      token: https://kauth.kakao.com/oauth/token
+      profile: https://kapi.kakao.com/v2/user/me
+      unlink: https://kapi.kakao.com/v1/user/unlink
+url:
+  base: http://localhost:8080
